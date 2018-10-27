@@ -5,4 +5,6 @@
 </template>
 
 <style lang="stylus" scoped>
+  #app
+    background-color rgb(245,245,245)
 </style>

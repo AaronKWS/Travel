@@ -55,25 +55,27 @@ export default {
     .title 
         margin-top: 0.1rem
         line-height: 0.8rem
-        background-color: #ccc
+        background-color: white
         text-indent: 0.2rem
         .title-desc
             font-size 16px
             font-family Arial,Verdana,Sans-serif
-    .item-img-wrapper
-        overflow hidden
-        height 0
-        padding-bottom 33.9%
-        .item-img 
-            width: 100%
-    .item-info 
-        padding: .1rem
-        .item-title 
-            line-height: .54rem
-            font-size: .32rem
-            ellipsis()
-        .item-desc 
-            line-height: 0.4rem
-            color: #ccc
-            ellipsis()
+    .item
+        background-color white
+        .item-img-wrapper
+            overflow hidden
+            height 0
+            padding-bottom 33.9%
+            .item-img 
+                width: 100%
+        .item-info 
+            padding: .1rem
+            .item-title 
+                line-height: .54rem
+                font-size: .32rem
+                ellipsis()
+            .item-desc 
+                line-height: 0.4rem
+                color: #ccc
+                ellipsis()
 </style>

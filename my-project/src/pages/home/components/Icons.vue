@@ -84,6 +84,7 @@ export default{
         height 0
         padding-bottom 57%
     .icons
+        background-color white
         margin-top .1rem
         .icon
             position relative

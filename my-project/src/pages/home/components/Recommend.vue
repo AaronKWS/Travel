@@ -50,22 +50,23 @@ export default {
 <style lang="stylus" scoped>
 @import '~styles/mixins.styl';
 .title 
-    margin-top: 0.1rem;
-    line-height: 0.8rem;
-    background-color: #ccc;
-    text-indent: 0.2rem;
+    margin-top: 0.1rem
+    line-height: 0.8rem
+    background-color: white
+    text-indent: 0.2rem
     .love-icon 
-        display: block;
-        float: left;
-        color: rgb(255, 91, 88);
-        font-size: 20px;
+        display: block
+        float: left
+        color: rgb(255, 91, 88)
+        font-size: 20px
     .title-desc
         font-size 16px
         font-family Arial,Verdana,Sans-serif
 .item
-    overflow: hidden;
-    display: flex;
-    height: 1.9rem;
+    overflow: hidden
+    display: flex
+    height: 1.9rem
+    background-color white
     .item-img 
         width: 1.7rem;
         height: 1.7rem;
