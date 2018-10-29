@@ -2,7 +2,7 @@
     <div>
         <div class="title"><span class="iconfont love-icon">&#xe60c;</span><p class="title-desc">猜你喜欢</p></div>
         <ul>
-            <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+            <li class="item border-bottom" v-for="item of list" :key="item.id">
                 <img class="item-img" :src="item.imgUrl">
                 <div class="item-info">
                     <p class="item-title">{{item.title}}</p>
@@ -17,32 +17,8 @@
 <script>
 export default {
   name: "HomeRecommend",
-  data() {
-    return {
-      recommendList: [
-        {
-          id: "0001",
-          imgUrl:
-            "http://img1.qunarzz.com/sight/p0/1503/33/33f6ddd58bf9811.water.jpg_200x200_8fc46d88.jpg",
-          title: "响沙湾",
-          desc: "内蒙古鄂尔多斯市达拉特旗响沙湾"
-        },
-        {
-          id: "0002",
-          imgUrl:
-            "http://img1.qunarzz.com/sight/p0/1710/36/3626151932799e9aa3.img.jpg_200x200_340c950e.jpg",
-          title: "万家惠欢乐世界",
-          desc: "内蒙古鄂尔多斯市达拉特旗响沙湾"
-        },
-        {
-          id: "0003",
-          imgUrl:
-            "http://img1.qunarzz.com/sight/p0/1705/c6/c6d282a696ad2836a3.img.jpg_200x200_fff0128f.jpg",
-          title: "夜鸣沙旅游区",
-          desc: "内蒙古鄂尔多斯市达拉特旗响沙湾"
-        }
-      ]
-    };
+  props: {
+      list: Array
   }
 };
 </script>
