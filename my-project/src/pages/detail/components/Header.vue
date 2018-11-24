@@ -45,8 +45,11 @@ export default {
             }
         }
     },
-    activated() {
+    activated() {  //页面被展示时执行
         window.addEventListener('scroll', this.handleScroll)
+    },
+    deactivated() { //页面即将被隐藏或者页面即将被替换成别的页面时执行
+        window.removeEventListener('scroll', this.handleScroll)
     }
 }
 </script>
